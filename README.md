@@ -23,9 +23,10 @@ Acc.@100:	0.8587257617728532
 ```
 
 ## Changes Based on the Original Repo
-This repo is forked from https://github.com/facebookresearch/DPR/commit/02e6454. Some changes have been made to make the code runnable (yeah, the official code had some problem back then).
+This repo is forked from https://github.com/facebookresearch/DPR/commit/02e6454. [Some changes](https://github.com/kwang2049/DPR/commit/4eec69d0f1153262701ba4c1da7a5f8e94aa59e2#diff-dab3e029eca385400ac2bbbdaa653de4a77bfc180cb78772739eb8975f379c35) have been made to make the code runnable (yeah, the official code had some problem back then).
 
 ---
+**Below is from the original README:**
 
 Dense Passage Retrieval (`DPR`) - is a set of tools and models for state-of-the-art open-domain Q&A research.
 It is based on the following paper:
