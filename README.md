@@ -1,5 +1,32 @@
 # Dense Passage Retrieval
 
+## Introduction of This Fork
+This repo aims at reproducing DPR (`single-nq`) **retrieval** evaluation with just a few commands. To run the evaluation, please run:
+```
+git clone https://github.com/kwang2049/DPR.git
+cd DPR && bash ./evaluate-single-nq.sh
+```
+The evaluation process takes around 2 hours on 16 CPU cores (mainly for Faiss search) and one GPU (mainly for encoding queries), without considering the automatic data downloading (around 75GB).
+
+For the details, please refer to the evaluation script [evaluate-single-nq.sh](evaluate-single-nq.sh) directly.
+
+## Reproduction Results
+There are 3610 questions in the `nq-test` and the metric used is Accuracy@K. This metric represents for how many percent of questions, the retrieved top-K passages have at least one occurrence of answers. For questions which have multiple answers, the DPR evaluation will mark the retrieved passage as `has_answer` if at least one answer can be found therein.
+```bash
+Acc.@1:	0.4592797783933518
+Acc.@2:	0.5656509695290859
+Acc.@5:	0.6814404432132964
+Acc.@10:	0.7465373961218836
+Acc.@20:	0.7997229916897507
+Acc.@50:	0.839612188365651
+Acc.@100:	0.8587257617728532
+```
+
+## Changes Based on the Original Repo
+This repo is forked from https://github.com/facebookresearch/DPR/commit/02e6454. Some changes have been made to make the code runnable (yeah, the official code had some problem back then).
+
+---
+
 Dense Passage Retrieval (`DPR`) - is a set of tools and models for state-of-the-art open-domain Q&A research.
 It is based on the following paper:
 
