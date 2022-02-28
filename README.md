@@ -22,6 +22,11 @@ Acc.@50:	0.839612188365651
 Acc.@100:	0.8587257617728532
 ```
 
+## Reproducing Embeddings with Huggingface' Transformers
+It is very inconvenient to use DPR's code in other projects. In contrast, using Hugginface's Transformers and the corresponding checkpoints give one more flexibility.
+
+Thus, please refer to the folder [huggingface](huggingface) for learning about how to reproduce embedding generation with Huggingface' Transformers.
+
 ## Changes Based on the Original Repo
 This repo is forked from https://github.com/facebookresearch/DPR/commit/02e6454. [Some changes](https://github.com/kwang2049/DPR/commit/4eec69d0f1153262701ba4c1da7a5f8e94aa59e2#diff-dab3e029eca385400ac2bbbdaa653de4a77bfc180cb78772739eb8975f379c35) have been made to make the code runnable (yeah, the official code had some problem back then).
 
